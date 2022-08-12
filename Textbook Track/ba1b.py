@@ -1,3 +1,4 @@
+# Find the Most Frequent Words in a String
 
 problem = "ba1b"
 input = open("data/rosalind_%s.txt" % problem, "r").read().split("\n")
@@ -18,14 +19,14 @@ def FreqPattern(text, k):
       else:
         dict.update({window:1})
 
-      most_freq = ""
-      max = 0
-      for mer in dict.keys():
-        if dict[mer] > max:
-          max = dict[mer]
-          most_freq = mer
-        elif dict[mer] == max:
-          most_freq += " " + mer
+    most_freq = ""
+    max = 0
+    for mer in dict.keys():
+      if dict[mer] > max:
+        max = dict[mer]
+        most_freq = mer
+      elif dict[mer] == max:
+        most_freq += " " + mer
 
     return most_freq
 

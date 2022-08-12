@@ -1,3 +1,4 @@
+# Compute the Number of Times a Pattern Appears in a Text
 
 problem = "ba1a"
 input = open("data/rosalind_%s.txt" % problem, "r").read().split("\n")

@@ -1,9 +1,10 @@
+# Find the Reverse Complement of a String
 
 problem = "ba1c"
 input = open("data/rosalind_%s.txt" % problem, "r").read().split("\n")[0]
 
 
-def PatternCount(seq):
+def ReverseComplement(seq):
   map = {
     "A": "T",
     "G": "C",
@@ -16,4 +17,4 @@ def PatternCount(seq):
     output += map[n]
   return output
 
-print(PatternCount(input))
+print(ReverseComplement(input))

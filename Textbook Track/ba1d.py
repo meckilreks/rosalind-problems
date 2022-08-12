@@ -1,9 +1,10 @@
+# Find All Occurrences of a Pattern in a String
 
 problem = "ba1d"
 input = open("data/rosalind_%s.txt" % problem, "r").read().split("\n")
 
-a = input[0]
-b = input[1]
+input1 = input[0]
+input2 = input[1]
 
 def FindOccurances(pattern, text):
     k = len(pattern)
@@ -19,4 +20,4 @@ def FindOccurances(pattern, text):
     output = " ".join(occurances)
     return output
 
-print(FindOccurances(a, b))
+print(FindOccurances(input1, input2))
